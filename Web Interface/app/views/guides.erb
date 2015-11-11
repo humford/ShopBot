@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>ShopBot</title>
+
+    <!-- Bootstrap -->
+	 <link href="/css/bootstrap.min.css" rel="stylesheet">
+	 <link href="/css/style.css" rel="stylesheet">
+	 <link href="/css/carousel.css" rel="stylesheet">
+	  
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	  <%= erb :navbar %>
+    <div class="container">
+		 <br>
+		 <br>
+		 <br>
+		 <br>
+		<div class="row">
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-10">
+				<!-- Nav tabs -->
+  				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#jigsaw" aria-controls="jigsaw" role="tab" data-toggle="tab">Jigsaw</a></li>
+					<li role="presentation"><a href="#drillpress" aria-controls="drillpress" role="tab" data-toggle="tab">Drill Press</a></li>
+					<li role="presentation"><a href="#beltsander" aria-controls="beltsander" role="tab" data-toggle="tab">Belt Sander</a></li>
+				</ul>
+
+  				<!-- Tab panes -->
+				<div class="tab-content">
+					
+					<div role="tabpanel" class="tab-pane active" id="jigsaw">
+						<br>  
+						<div class="panel panel-default">
+  								<div class="panel-heading">
+									<h3 class="panel-title">Jigsaw</h3>
+  								</div>
+  								<div class="panel-body">
+    								<div class="videoWrapper">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/yJrgi20PLVg" frameborder="0" allowfullscreen></iframe>
+									</div>
+  								</div>
+							</div>
+					</div>
+					
+					<div role="tabpanel" class="tab-pane" id="drillpress">
+						<br>  
+						<div class="panel panel-default">
+  								<div class="panel-heading">
+									<h3 class="panel-title">Drill Press</h3>
+  								</div>
+  								<div class="panel-body">
+    								<div class="videoWrapper">
+										<iframe width="420" height="315" src="https://www.youtube.com/embed/6JyIR5nwRho" frameborder="0" allowfullscreen></iframe>
+									</div>
+  								</div>
+							</div>
+					</div>
+					
+					<div role="tabpanel" class="tab-pane" id="beltsander">
+						<br>  
+						<div class="panel panel-default">
+  								<div class="panel-heading">
+									<h3 class="panel-title">Belt Sander</h3>
+  								</div>
+  								<div class="panel-body">
+    								<div class="videoWrapper">
+										<iframe width="420" height="315" src="https://www.youtube.com/embed/a9nkfAoDYtI" frameborder="0" allowfullscreen></iframe>
+									</div>
+  								</div>
+							</div>
+					</div>
+  				</div>
+			</div>
+			<div class="col-md-1">
+			</div>
+	   </div>
+  </body>
+</html>

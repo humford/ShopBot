@@ -9,5 +9,13 @@ class ApplicationController < Sinatra::Base
   get "/" do
 	  erb :index
   end
+	
+  get "/guides" do
+	  erb :guides
+  end
+	
+  get "/hub" do
+		erb :hub
+  end	
 end
 
