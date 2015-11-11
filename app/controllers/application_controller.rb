@@ -17,5 +17,21 @@ class ApplicationController < Sinatra::Base
   get "/hub" do
 		erb :hub
   end	
+
+  get "/projects" do
+	  erb :projects
+  end
+
+  get "/materials" do
+	  erb :materials
+  end
+
+  get "/rules" do
+	  erb :rules
+  end
+
+  get "/join" do
+	  redirect "http://www.tinyurl.com/CompSciSignUp"
+  end
 end
 
